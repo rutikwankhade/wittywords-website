@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
      <div className='flex lg:flex-row flex-col-reverse p-6  mx-auto lg:w-10/12'>
      <div className="lg:w-1/2 ">
-<Image src={screenshot} className=""/>
+<Image src={screenshot} className="" alt="app screenshot"/>
 
 </div>
 
