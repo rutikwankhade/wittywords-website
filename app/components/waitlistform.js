@@ -4,7 +4,7 @@ export default function WaitlistForm() {
 
     return (
         <div className="mt-10">
-            <p className="text-slate-600">Join the waitlist of wittywords to get notified as soon as it is launched on the play store.</p>
+            <p className="text-white text-xl text-center">Join the waitlist of wittywords to get notified as soon as it is launched on the play store.</p>
             <iframe
                 src="https://tally.so/embed/3qAGBO?alignLeft=1&hideTitle=1&transparentBackground=1"
                 width="100%"

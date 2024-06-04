@@ -5,7 +5,7 @@ import favicon from '../app/favicon.png'
 import Head from "next/head";
 import { Poppins } from 'next/font/google'
 import { Nanum_Pen_Script } from "next/font/google";
-
+import playStoreBadge from '../app/assets/google-play-badge.png'
 const poppins = Poppins({
   subsets: ['latin'],
 
@@ -30,9 +30,14 @@ export default function Home() {
         <div className='p-10 flex justify-center items-center flex-col'>
           <Image alt="favicon" src={favicon} className="w-14 h-14 rounded-xl my-2" />
           <h2 className={`text-5xl text-center font-bold ${nanum.className}`}>WittyWords</h2>
-          <h2 className={`text-4xl text-center text-gray-800 font-semibold ${poppins.className}`}>Your vocabulary guide</h2>
+          <h2 className={`lg:text-4xl text-xl text-center text-gray-800 font-semibold ${poppins.className}`}>Your vocabulary guide</h2>
 
 
+          <div className='mx-auto mt-2'>
+            <a href='#' className=''>
+              <Image alt="favicon" src={playStoreBadge} className="w-1/2 mx-auto" />
+            </a>
+          </div>
         </div>
 
 
@@ -42,24 +47,40 @@ export default function Home() {
         </div>
 
 
-     
+
       </div>
 
 
+      <div className='w-full text-white bg-indigo-500 lg:p-32 p-6 py-10 rounded-t-3xl lg:rounded-t-[80px]'>
+        <div className='flex flex-col items-center justify-center'>
+          <h1 className={`lg:text-7xl text-3xl text-center font-semibold ${poppins.className}`}>Make learning fun <span>again</span></h1>
 
-      {/* <div className='flex lg:flex-row flex-col-reverse p-6  mx-auto lg:w-10/12'>
-      
 
-        <div className='lg:w-1/2 py-20 lg:mt-20 flex flex-col  '>
-          <h1 className="text-5xl font-bold">WittyWords</h1>
-          <h2 className="text-3xl font-semibold mt-4 mb-2">Learn new english words everyday</h2>
-          <WaitlistForm />
+          {/* uncomment after published */}
+          {/* <div className='mx-auto my-10'>
+            <a href='#' className=''>
+              <Image alt="favicon" src={playStoreBadge} className=" " />
+            </a>
+          </div> */}
+
+
         </div>
 
+        <div className='flex lg:flex-row flex-col-reverse p-6  mx-auto lg:w-10/12'>
+
+
+          <div className='lg:w-1/2 mx-auto flex flex-col  '>
+
+            <WaitlistForm />
+          </div>
 
 
 
-      </div> */}
+
+        </div>
+      </div>
+
+
     </main>
   );
 }
