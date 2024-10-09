@@ -1,5 +1,4 @@
 import Image from "next/image";
-import WaitlistForm from './components/waitlistform'
 import screenshot from '../app/assets/hero.png'
 import favicon from '../app/favicon.png'
 import Head from "next/head";
@@ -34,8 +33,8 @@ export default function Home() {
 
 
           <div className='mx-auto mt-2'>
-            <a href='#' className=''>
-              <Image alt="favicon" src={playStoreBadge} className="w-1/2 mx-auto" />
+            <a href='https://play.google.com/store/apps/details?id=com.wittywords&pcampaignid=web_share' target="_blank" rel="noreferrer" className=''>
+              <Image alt="favicon" src={playStoreBadge} className="w-2/3 mx-auto mt-4 hover:scale-105  duration-200" />
             </a>
           </div>
         </div>
@@ -46,38 +45,31 @@ export default function Home() {
 
         </div>
 
-
-
       </div>
 
 
-      <div className='w-full text-white bg-indigo-500 lg:p-32 p-6 py-10 rounded-t-3xl lg:rounded-t-[80px]'>
+      <div className='w-full relative text-white bg-indigo-500 lg:pt-32 lg:px-32 p-6 py-10 rounded-t-3xl lg:rounded-t-[80px]'>
+
+
+        <Image src={favicon} alt="avatar" className="hidden sm:block hover:scale-110 duration-200 hover:rotate-6 absolute w-20 h-20 top-10 left-36 rotate-12 rounded-xl" />
+        <Image src={favicon} alt="avatar" className=" hidden sm:block hover:scale-110 duration-200 absolute hover:rotate-45 w-20 h-20 top-40 -rotate-6 right-28 rounded-full" />
+        <Image src={favicon} alt="avatar" className="hidden sm:block hover:scale-125 hover:-rotate-12 duration-200 absolute w-20 h-20 bottom-44 right-56 -rotate-45 " />
+        <Image src={favicon} alt="avatar" className="hidden sm:block hover:scale-125 duration-200 hover:rotate-12 absolute w-20 h-20 bottom-48 left-56 rotate-6 rounded-full" />
+
         <div className='flex flex-col items-center justify-center'>
-          <h1 className={`lg:text-7xl text-3xl text-center font-semibold ${poppins.className}`}>Make learning fun <span>again</span></h1>
+          <h1 className={`lg:text-7xl text-3xl text-center font-semibold ${poppins.className}`}>Make learning  </h1>
+          <h1 className={`lg:text-7xl text-3xl text-center font-semibold  ${poppins.className}`}>fun again</h1>
 
-
-          {/* uncomment after published */}
-          {/* <div className='mx-auto my-10'>
-            <a href='#' className=''>
-              <Image alt="favicon" src={playStoreBadge} className=" " />
+          <div className='mx-auto my-10'>
+            <a href='https://play.google.com/store/apps/details?id=com.wittywords&pcampaignid=web_share' target="_blank" rel="noreferrer" className=''>
+              <Image alt="favicon" src={playStoreBadge} className="hover:scale-105 duration-200 " />
             </a>
-          </div> */}
-
-
-        </div>
-
-        <div className='flex lg:flex-row flex-col-reverse p-6  mx-auto lg:w-10/12'>
-
-
-          <div className='lg:w-1/2 mx-auto flex flex-col  '>
-
-            <WaitlistForm />
           </div>
 
-
-
+          <a href="https://rutik.dev" target="_blank" rel="noreferrer" className="text-xl font-semibold text-white text-center underline decoration-wavy	mx-auto">rutik.dev</a>
 
         </div>
+
       </div>
 
 
